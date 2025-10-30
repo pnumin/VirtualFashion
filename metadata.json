@@ -1,0 +1,5 @@
+{
+  "name": "Virtual Fashion Try-On",
+  "description": "Upload a photo of a person and a piece of clothing to see them virtually try it on, powered by Gemini.",
+  "requestFramePermissions": []
+}
