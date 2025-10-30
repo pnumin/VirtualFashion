@@ -136,18 +136,21 @@ export default function App() {
                 model: 'gemini-2.5-flash-image',
                 contents: {
                     parts: [
+                        { text: '이 사람입니다:' },
                         {
                             inlineData: {
                                 data: personImage.base64.split(',')[1],
                                 mimeType: personImage.mimeType,
                             },
                         },
+                        { text: '이 상의를 입혀주세요:' },
                         {
                             inlineData: {
                                 data: topImage.base64.split(',')[1],
                                 mimeType: topImage.mimeType,
                             },
                         },
+                        { text: '그리고 이 하의를 입혀주세요:' },
                         {
                             inlineData: {
                                 data: bottomImage.base64.split(',')[1],
@@ -155,7 +158,7 @@ export default function App() {
                             },
                         },
                         {
-                            text: '이 사람에게 이 상의와 하의를 입혀주세요. 자연스럽고 사실적으로 보이게 해주세요.',
+                            text: '최종 결과물은 옷을 입은 사람만 보여주고, 매우 사실적으로 만들어 주세요.',
                         },
                     ],
                 },
